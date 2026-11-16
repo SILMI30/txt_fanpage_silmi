@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f9f9;
+}
+        
+.header-silmi {
+    padding: 40px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.navbar-silmi {
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar-silmi a {
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+.navbar-silmi a:hover {
+    background-color: white;
+    color: black;
+}
+
+.row-silmi {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side-silmi {
+    flex: 30%;
+    background-color: white; 
+    padding: 20px;
+    border-right: 2px solid black;
+}
+
+.social-container_silmi {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-link_silmi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-link_silmi i {
+    font-size: 16px; 
+}
+
+.social-link_silmi:hover {
+    background-color: white;
+    color: black;
+    transform: translateX(5px); 
+}
+.main-silmi {
+    flex: 70%;
+    background-color: white;
+    padding: 25px;
+}
+.section-box {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.member-silmi {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    gap: 20px; 
+    margin-top: 15px;
+}
+
+.profile-silmi {
+    width: 200px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.mv-section-title_silmi {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.featured-video-box_silmi {
+    background-color: #f8f9fa;
+    border: 1px solid #e0fbfc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.local-video-large_silmi {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+.featured-info_silmi {
+    margin-top: 12px;
+}
+
+.featured-info_silmi h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.featured-info_silmi p {
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.mv-divider_silmi {
+    border: 0;
+    border-top: 2px solid #e0fbfc;
+    margin: 25px 0;
+}
+
+.mv-grid-bottom_silmi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.mv-card-small_silmi {
+    background-color: #f8f9fa;
+    border: 1px solid #e0fbfc;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.mv-card-small_silmi:hover {
+    transform: translateY(-3px);
+}
+
+.local-video-small_silmi,
+.playlist-thumb-container_silmi img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #000;
+}
+
+.mv-card-small_silmi h4 {
+    font-size: 13px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.btn-primary_silmi, .btn-secondary_silmi {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary_silmi {
+    background-color: black;
+    color: #ffffff;
+}
+
+.btn-primary_silmi:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-secondary_silmi {
+    background-color: black;
+    color: #ffffff;
+}
+
+.btn-secondary_silmi:hover {
+    background-color: white;
+    color: black;
+}
+
+.album-grid_silmi {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.album-card_silmi {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-card_silmi:hover {
+    background-color: black;
+    transform: translateY(-5px);
+    color: white;
+}
+
+.album-cover_silmi {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.album-title_silmi {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 6px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.album-card_silmi:hover .album-title_silmi{
+    color: white;
+}
+
+.album-info_silmi {
+    font-size: 12px;
+    margin: 0;
+}
+
+#notFoundAlbum_silmi {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px auto;
+    font-size: 15px;
+}
+
+.playlist-grid_silmi {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.playlist-card_silmi {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.playlist-card_silmi:hover {
+    transform: translateY(-4px);
+}
+
+.playlist-thumb-box_silmi {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.playlist-thumb-box_silmi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.playlist-title_silmi {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.playlist-type_silmi {
+    font-size: 12px;
+    color: #606060;
+    margin: 0 0 2px 0;
+}
+
+.playlist-link-text_silmi {
+    font-size: 12px;
+    font-weight: 600;
+    color: #606060;
+    margin: 0;
+}
+
+.playlist-card_silmi:hover .playlist-link-text_silmi {
+    color: black;
+    text-decoration: underline;
+}
+
+#notFoundPlaylist_silmi {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px auto;
+    font-size: 15px;
+}
+
+.timeline-container_silmi {
+    position: relative;
+    margin-top: 25px;
+    padding-left: 25px;
+    border-left: 3px solid black; 
+}
+
+.timeline-item_silmi {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-dot_silmi {
+    position: absolute;
+    left: -32.5px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.timeline-content_silmi {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline-content_silmi:hover {
+    transform: translateX(4px);
+    background-color: #f0f8ff;
+}
+
+.timeline-content_silmi h3 {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.timeline-content_silmi p {
+    font-size: 13px;
+    color: #333333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.box-silmi {
+    background-color: black;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.box-silmi p {
+    margin: 0 0 8px 0;
+}
+
+.email-silmi {
+    color: white; 
+    font-weight: bold; 
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.email-silmi:hover {
+    text-decoration: underline;
+}
+
+.form-silmi input[type="text"],
+.form-silmi textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.kirim-silmi {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.kirim-silmi:hover {
+    background: white;
+    color: black;
+}
+
+.instagram-silmi {
+    color: black;  
+    text-decoration: none;
+}
+.instagram-silmi:hover{
+    text-decoration: underline;
+}
+
+.footer-silmi {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .row-silmi, .navbar-silmi {
+        flex-direction: column;
+    }
+    .side-silmi {
+        order: 2;
+    }
+    .main-silmi {
+        order: 1;
+    }
+    .member-silmi {
+        flex-direction: column; 
+    }
+    .profile-silmi {
+        width: 90%; 
+    }
+}
